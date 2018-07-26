@@ -14,7 +14,8 @@ import com.lanou.service.UserService;
 public class UserController {
 	@Autowired
 	private UserService userService;
-	@RequestMapping(value="/findAll")
+	// 修改了路径
+	@RequestMapping(value="/modify")
 	public String findAll(Model model) {
 		
 		List<User> users = userService.findAll();
