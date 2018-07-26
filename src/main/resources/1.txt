@@ -1,0 +1,8 @@
+ssm框架整合
+1.除了spring springmvc包外 引入mybatis只要将mybatis.jar和另一个用于将 mybatis和spring
+整合在一起的mybatis-spring.jar就够了
+2.web.xml中spring的监听器
+springmvc的servlet的注册
+3.需要在spring中管理orm框架 配置文件中配置datasource和sqlsessionfactory
+4.将dao层扫描到ioc中
+5.事务管理

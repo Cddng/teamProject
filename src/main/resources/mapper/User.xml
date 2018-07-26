@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--将namespace设置为到层接口的全类名  调用dao层方法时时来这个xml找对应的方法 -->
+<mapper namespace="com.lanou.dao.UserMapper">
+	<resultMap type="User" id="baseMap">
+	<id column="id" property="userId" />
+	<result column="name" property="userName"/>
+	</resultMap>
+	<select id="selectAll" resultMap="baseMap">
+		select * from user
+	</select>
+	
+</mapper>
